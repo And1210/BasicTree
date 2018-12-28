@@ -1,6 +1,3 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-BasicTree.egg-info/*
-build/*
-dist/*
