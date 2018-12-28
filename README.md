@@ -31,3 +31,36 @@ The Tree class has three functions:
   - will create as many layers as passed in as an argument
 - printTree()
   - attempts to print the tree in a pretty format (not the nicest but is helpful)
+
+## Basic Usage
+Create a tree:
+```python
+import BasicTree as bt
+
+tree = bt.Tree()
+tree.createTree(4)
+tree.printTree()
+```
+As the tree is randomized your output may be a little different but it should have created a tree with a total of 4 layers that will print something like this:
+```python
+           V                
+      B        Y        
+   L    W    W    Z    
+A  P  N  K  X  J  G  N  
+```
+
+You could then get the root and start a basic left-search like this:
+```python
+root = tree.getRoot()
+print(root.data)
+while len(root.children) > 0:
+  root = root.children[0]
+  print(root.data)
+```
+Which (if the tree were the same as above) would output:
+```python
+V
+B
+L
+A
+```
