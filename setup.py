@@ -11,7 +11,7 @@ setuptools.setup(
     description="A basic tree library, useful for testing different searching methods",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/And1210/IntroToAICourseCode/tree/master/BasicTree",
+    url="https://github.com/And1210/BasicTree",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
